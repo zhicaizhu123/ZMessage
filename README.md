@@ -1,29 +1,26 @@
 # z-message
 
-## Project setup
-```
-npm install
+> 自定义 element-ui Message 消息提示
+
+## 安装
+
+```sh
+# 因为时基于element的消息提示二次封装
+# 所以使用前确保已经安装了element-ui
+npm install --save z-message
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 使用
 
-### Compiles and minifies for production
-```
-npm run build
-```
+```js
+import Vue from 'vue'
+import ZMessage from 'z-message'
 
-### Run your tests
-```
-npm run test
-```
+ZMessage.setConfig({
+  max: 1, // 最多显示的消息条数，默认为 0 表示不限制
+  isQueue: true, // 是否已队列显示消息，默认为false
+  showNewest: false // 是否只消息最新的消息，默认为true
+})
 
-### Lints and fixes files
+Vue.prototype.$message = ZMessage
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
