@@ -7,14 +7,14 @@
 ```sh
 # 因为时基于element的消息提示二次封装
 # 所以使用前确保已经安装了element-ui
-npm install --save z-message
+npm install --save zmessagejs
 ```
 
 ## 使用
 
 ```js
 import Vue from 'vue'
-import ZMessage from 'z-message'
+import ZMessage from 'zmessagejs'
 
 ZMessage.setConfig({
   max: 1, // 最多显示的消息条数，默认为 0 表示不限制

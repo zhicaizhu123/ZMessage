@@ -1,5 +1,5 @@
 {
-  "name": "z-message",
+  "name": "zmessagejs",
   "version": "0.1.0",
   "description": "the custom plugins of element-ui message",
   "main": "packages/index.js",
